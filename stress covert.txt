@@ -1,0 +1,15 @@
+stress convert from cylindrical coordinate to spherical coordinate
+
+radial stress:
+solid.sr*R^2/(R^2+Z^2)+solid.sz*Z^2/(R^2+Z^2)+solid.srz*R*Z/(R^2+Z^2)*2
+
+change sign:
+-(solid.sr*R^2/(R^2+Z^2)+solid.sz*Z^2/(R^2+Z^2)+solid.srz*R*Z/(R^2+Z^2)*2)
+
+
+shear stress1:
+solid.sr*Z^2/(R^2+Z^2)+solid.sz*R^2/(R^2+Z^2)-solid.srz*R*Z/(R^2+Z^2)*2
+
+
+shear stress2:
+solid.sphi
